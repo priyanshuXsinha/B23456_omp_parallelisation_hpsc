@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build simulation",
+      "type": "shell",
+      "command": "g++-15",
+      "args": [
+        "-fopenmp",
+        "simulation.cpp",
+        "-o",
+        "simulation"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
